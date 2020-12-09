@@ -30,7 +30,13 @@ obtenerDivisibles(numero){
     return divisores;
 }
 
-
+elevar(numero,potencia){
+    let resultado=1;
+    for(let i=1; i<=potencia;i++){
+        resultado=resultado*numero;
+    }
+    return resultado;
+}
 
 }
 
@@ -44,3 +50,6 @@ console.log(app.convertirAString(5));
 
 console.log("Probando obtenerDivisibles()");
 console.log(app.obtenerDivisibles(6));
+
+console.log("Probando elevar()");
+console.log(app.elevar(3,4));
