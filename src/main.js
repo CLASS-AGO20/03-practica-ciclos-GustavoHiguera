@@ -18,7 +18,17 @@ convertirAString(numero){
     return asterisco;
 }
 
-
+obtenerDivisibles(numero){
+    let divisores=0;
+    let i=1;
+    do{
+        if(numero%i===0){
+            divisores++;
+        }
+        i++
+    } while (i<=numero);
+    return divisores;
+}
 
 
 
@@ -31,3 +41,6 @@ console.log(app.factorial(5));
 
 console.log("Probando convertirAString()");
 console.log(app.convertirAString(5));
+
+console.log("Probando obtenerDivisibles()");
+console.log(app.obtenerDivisibles(6));
