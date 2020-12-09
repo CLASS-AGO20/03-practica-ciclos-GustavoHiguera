@@ -8,7 +8,15 @@ factorial(numero){
     return multiplicacion;
 }
 
-
+convertirAString(numero){
+    let asterisco="";
+    let i=1
+    while(i<=numero){
+        asterisco=`${asterisco}*`
+        i++
+    }
+    return asterisco;
+}
 
 
 
@@ -20,3 +28,6 @@ let app = new App();
 
 console.log("Probando factorial()");
 console.log(app.factorial(5));
+
+console.log("Probando convertirAString()");
+console.log(app.convertirAString(5));
